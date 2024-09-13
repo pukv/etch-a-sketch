@@ -12,6 +12,13 @@ function createGrid(gridSize) {
     gridElement.style.height = `${elementSize}%`;
 
     container.appendChild(gridElement);
+
+    const gridElements = document.querySelectorAll(".element");
+    gridElements.forEach((gridElement) => {
+      gridElement.addEventListener("mouseenter", () => {
+        gridElement.style.backgroundColor = "black";
+      });
+    });
   }
 }
 
