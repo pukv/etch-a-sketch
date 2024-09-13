@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const container = document.querySelector("#container");
 
 function createGrid(gridSize) {
@@ -23,3 +24,7 @@ function createGrid(gridSize) {
 }
 
 createGrid(16);
+
+const gridBtn = document.createElement("button");
+body.insertBefore(gridBtn, container);
+gridBtn.textContent = "New Grid";
